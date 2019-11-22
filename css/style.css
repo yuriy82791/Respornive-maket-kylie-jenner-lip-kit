@@ -192,5 +192,100 @@ p{
 .header-phones a span{
   font-family: "Gotham Pro Light";
   margin-right: 3px;
-  margin: 5px 0; 
+  margin: 5px 0;
+}
+.main-container{
+  min-height: 621px;
+  background-image: url(../images/woman-bg.jpg);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-container::before{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 24px;
+  background-image: url(../images/wave-1.png);
+  background-position: center left;
+  background-repeat: repeat-x;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.main-container::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 24px;
+  background-image: url(../images/wave-2.png);
+  background-position: center left;
+  background-repeat: repeat-x;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.main-wrapper{
+  max-width: 935px;
+  margin-left: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.main-content{
+  max-width: 595px;
+}
+.main-content-title{
+  color: #333333;
+  font-family: 'Bebas Neue Bold';
+  font-size: 48px;
+  line-height: 52px;
+  text-transform: uppercase;
+  margin-top: 100px;
+  margin-bottom: 45px;
+}
+.main-content-title span{
+  color: #d4416a;
+  font-family: 'Bebas Neue Bold';
+}
+.main-content-text{
+  max-width: 470px;
+  font-size: 18px;
+  line-height: 36px;
+  color: #333333;
+  font-family: "Gotham Pro";
+  margin: 0 auto;
+}
+.main-content-text span{
+  display: block;
+  text-align: center;
+}
+.order-btn{
+  margin: 40px auto 0;
+  display: block;
+  width: 300px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  background:#d4416a;
+  background: linear-gradient(0deg, #d4416a 0%, #bb3e61 100%);
+  border-bottom: 3px solid #ab3456;
+  transition: all .3s linear;
+}
+.order-btn span{
+  font-family: "Gotham Pro Bold";
+}
+.order-btn:hover{
+  border-color:#bb3e61;
+}
+.main-content-img{
+  margin-top: 95px;
 }
