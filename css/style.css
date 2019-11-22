@@ -130,7 +130,7 @@ img{
     height: auto;
 }
 strong, b, h1, h2, h3, h4, h5, h6{
-  font-weight: bold;
+  font-family: 'Gotham Pro Bold';
 }
 
 p{
@@ -191,8 +191,7 @@ p{
 }
 .header-phones a span{
   font-family: "Gotham Pro Light";
-  margin-right: 3px;
-  margin: 5px 0;
+  margin: 5px 3px 5px 0;
 }
 .main-container{
   min-height: 621px;
@@ -231,7 +230,7 @@ p{
 }
 .main-wrapper{
   max-width: 935px;
-  margin-left: 80px;
+  margin-left: 70px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -265,7 +264,7 @@ p{
   text-align: center;
 }
 .order-btn{
-  margin: 40px auto 0;
+  margin: 0 auto;
   display: block;
   width: 300px;
   text-align: center;
@@ -280,6 +279,9 @@ p{
   border-bottom: 3px solid #ab3456;
   transition: all .3s linear;
 }
+.main-content .order-btn{
+    margin-top: 40px;
+}
 .order-btn span{
   font-family: "Gotham Pro Bold";
 }
@@ -288,4 +290,53 @@ p{
 }
 .main-content-img{
   margin-top: 95px;
+}
+.about-container-wrapper{
+  position: relative;
+  padding-bottom: 175px;
+}
+.about-container-wrapper .liplit-img{
+  position: absolute;
+  bottom: 35px;
+  right: 65px;
+}
+.about-container-wrapper::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 24px;
+  background-image: url(../images/wave-3.png);
+  background-position: center left;
+  background-repeat: repeat-x;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.about-container{
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.about-block{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.about-title{
+  font-size: 36px;
+  line-height: 48px;
+  color: #d4416a;
+  font-family: "Gotham Pro Bold";
+  text-align: center;
+  color: #d4416a;
+  margin: 85px 0 50px;
+}
+.about-text-block{
+  flex-basis:760px;
+  padding: 0 10px;
+}
+.about-text{
+  font-size: 16px;
+  line-height: 36px;
+  color: #333333;
+  margin: 65px 0;
 }
