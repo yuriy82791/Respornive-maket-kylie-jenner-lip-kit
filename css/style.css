@@ -465,7 +465,7 @@ p{
     display: none;
   }
   .about-wrapper{
-    padding-bottom: 50px;
+    padding-bottom: 50px; 
   }
 }
 @media (max-width:1200px) {
